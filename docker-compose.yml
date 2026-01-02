@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: frontedsdrimsac
+    ports:
+      - "30001:30001"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
