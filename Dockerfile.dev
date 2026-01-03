@@ -15,5 +15,5 @@ COPY . .
 # Exponer puerto
 EXPOSE 5173
 
-# Comando para ejecutar en modo desarrollo
-CMD ["npm", "run", "dev", "--", "--host"]
+# Comando para ejecutar en modo desarrollo con hot reload
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
